@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ramskar/Banking-app/issues"
   },
-  "homepage": "https://github.com/ramskar/Banking-app#readme"
+  "homepage": "https://github.com/ramskar/Banking-app#readme",
+  "dependencies": {
+    "linebyline": "^1.3.0"
+  }
 }
