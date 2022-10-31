@@ -1,10 +1,13 @@
-// const readline = require('readline');
 import readline from 'readline';
-import greetWithClient from './greetWithClient.js';
+import { greetWithCeo, greetWithClient } from './greetWithClient.js';
 
 const rl = readline.createInterface(
     process.stdin, process.stdout);
 
 rl.question('Iveskite varda: ', (name) => {
-    greetWithClient(name);
+    if (name == "Tadas") {
+        greetWithCeo(name);
+    } else {
+        greetWithClient(name);
+    }
 });
