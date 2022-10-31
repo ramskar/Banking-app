@@ -1,7 +1,10 @@
-var readline = require('readline');
-var rl = readline.createInterface(
+// const readline = require('readline');
+import readline from 'readline';
+import greetWithClient from './greetWithClient.js';
+
+const rl = readline.createInterface(
     process.stdin, process.stdout);
 
 rl.question('Iveskite varda: ', (name) => {
-    console.log('Sveiki, ' + name +"!");
+    greetWithClient(name);
 });
